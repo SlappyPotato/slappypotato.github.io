@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('fonts/commando.woff2') format('woff2'),
+         url('fonts/commando.woff') format('woff'),
+         url('fonts/commando.ttf') format('truetype');
+}
+
+body {
+    background-color: darkblue;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+main {
+    padding: 2em;
+    margin: auto;
+    width: 50%;
+    border: 0.1em white solid;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'MyWebFont', sans-serif;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+h1 {font-size: 6em;}
+h2 {font-size: 3em;}

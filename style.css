@@ -1,3 +1,21 @@
+/* === === === === === === Scaling === === === === === === */
+@media screen and (min-width: 500px) {
+    body{font-size: 25%;}
+}
+
+@media screen and (min-width: 800px) {
+    body{font-size: 50%;}
+}
+
+@media screen and (min-width: 950px) {
+    body{font-size: 75%;}
+}
+
+@media screen and (min-width: 1275px) {
+    body{font-size: 100%;}
+}
+
+/* === === === === === === Commando Font === === === === === === */
 @font-face {
     font-family: 'commando';
     src: url('fonts/commando.woff2') format('woff2'),
@@ -5,6 +23,7 @@
          url('fonts/commando.ttf') format('truetype');
 }
 
+/* === === === === === === Generic === === === === === === */
 body {
     background-image: url(images/bg.png);
     color: white;
@@ -19,25 +38,64 @@ main {
     background-color: rgba(0, 0, 0, 0.25);
 }
 
-h1 {
+h1, h2 {
     font-family: 'commando', sans-serif;
     letter-spacing: 0.02em;
     margin-top: 0.1em;
     margin-bottom: 0.1em;
-    font-size: 6em;
 }
 
-h2, h3, h4, h5, h6 {
+h1 {font-size: 6em;}
+h2 {font-size: 3em;}
+
+
+h3, h4, h5, h6 {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: bold;
     margin-top: 0.1em;
     margin-bottom: 0.1em;
 }
 
+h3 {font-size: 2.5em;}
+h4 {font-size: 2em;}
+h5 {font-size: 1.5em;}
+h6 {font-size: 1em;}
+
 a {
-    color: rgb(); /*TODO: ADD CUBE COLOR*/
+    color: rgb(254, 63, 99);
 }
 
+.spacer {
+    margin: 5em;
+}
+
+.smallspacer {
+    margin: 2.5em;
+}
+
+p.description {
+    max-width: 75%;
+    margin: auto;
+    font-size: 1.25em;
+    line-height: 167.5%;
+}
+
+.ytembed {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.ytembed iframe, .ytembed object, .ytembed embed {
+	position:absolute;
+	left:12.5%;
+	width:75%;
+	height:75%;
+}
+
+/* === === === === === === Navbar === === === === === === */
 .navbar ul {
     text-align: center;
     list-style-type: none;
@@ -58,4 +116,39 @@ a {
     color: white;
     text-decoration: none;
     padding: 0 2em 0 2em;
+}
+
+/* === === === === === === Play Game Table === === === === === === */
+#playgame {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#playgame tr th, td{
+    padding: 1em;
+}
+
+.badge {
+    padding-top: 0.5em;
+    max-width: 12.5em;
+    height: auto;
+}
+
+#topcell {
+    border-bottom: 0.1em white solid;
+}
+
+#leftcell {
+    border-right: 0.1em white solid;
+}
+
+/* === === === === === === External Links === === === === === === */
+.links {
+    font-size: 1.5em;
+    list-style-type: none;
+    margin: 1em 0 1em 2.5em;
+    padding: 0.5em 0 0.5em 1em;
+    border-left: 0.1em white solid;
 }

@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <title>CubeRunner</title>
+
+    <!-- Google Fonts - Space Grotesk -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>CubeRunner</title>
 </head>
 <body>
     <main>
@@ -16,26 +19,55 @@
         <nav class="navbar">
             <ul>
                 <li class ="navbutton"><a href="#">Home</a></li>
+                <li class ="navbutton"><a href="links.html">External Links</a></li>
+                <li class ="navbutton"><a href="about.html">About</a></li>
                 <li class ="navbutton"><a href="privacy.html">Privacy Policy</a></li>
             </ul>
         </nav>
+        
+        <div class="smallspacer"></div>
 
         <!-- Open Beta -->
-        <h2 style="text-align: center;">Now in Open Beta</h2>
+        <h3 style="text-align: center;">Now in Open Beta</h3>
 
         <!-- YouTube Trailer -->
-        <div style="text-align: center;">
+        <div class="ytembed">
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aUKHalSldb8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        
 
         <!-- Short Description -->
-        <h4 style="text-align: center;padding-bottom: 2em;">Synthwave Precise Endless Runner</h4>
+        <h5 style="text-align: center;padding-bottom: 2em;">Synthwave Precise Endless Runner</h5>
 
         <!-- Long Description -->
-        <p>Play casually on Easy or Normal, or amp yourself up with the Hard and Impossible difficulties! Unlike most Runner-type games, CubeRunner does not divide the field into lanes, and thus requires precise movement and skill to navigate. Power-Ups are found randomly on the field, and can be used to your advantage.</p>
-    
-        <!-- TODO: Add download links -->
+        <p class= "description">
+            Play casually on Easy or Normal, or amp yourself up with the Hard and Impossible difficulties!<br>
+            Unlike most Runner-type games, CubeRunner does not divide the field into lanes, and thus requires precise movement and skill to navigate.<br>
+            Power-Ups are found randomly on the field, and can be used to your advantage.
+        </p>
+        
+        <div class="spacer"></div>
 
+        <!-- Play Game Table -->
+        <table id="playgame">
+            <tr id="topcell">
+                <th colspan="2">
+                    <h2>Play Game</h2>
+                </th>
+            </tr>
+            <tr>
+                <td id="leftcell">
+                    <a href="https://poorgrammer.itch.io/cuberunner">
+                        <img class="badge" src="images/itch-badge.svg" alt="itch.io Page" />
+                    </a>
+                </td>
+                <td>
+                    <p>Coming Soon!</p>
+                </td>
+            </tr>
+        </table>
+
+        <div class="spacer"></div>
     </main>
 </body>
 </html>

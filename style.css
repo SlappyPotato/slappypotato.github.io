@@ -1,18 +1,53 @@
 /* === === === === === === Scaling === === === === === === */
-@media screen and (min-width: 500px) {
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{font-size: 10%;}
+
+    :root {
+        --main-width: 85%;
+        --title-size: 25em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
     body{font-size: 25%;}
+
+    :root {
+        --main-width: 80%;
+        --title-size: 20em;
+    }
 }
 
-@media screen and (min-width: 800px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
     body{font-size: 50%;}
+
+    :root {
+        --main-width: 75%;
+        --title-size: 10em;
+    }
 }
 
-@media screen and (min-width: 950px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
     body{font-size: 75%;}
+
+    :root {
+        --main-width: 60%;
+        --title-size: 8em;
+    }
 }
 
-@media screen and (min-width: 1275px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
     body{font-size: 100%;}
+
+    :root {
+        --main-width: 50%;
+        --title-size: 6em;
+    }
 }
 
 /* === === === === === === Commando Font === === === === === === */
@@ -24,6 +59,7 @@
 }
 
 /* === === === === === === Generic === === === === === === */
+
 body {
     background-image: url(images/bg.png);
     color: white;
@@ -33,7 +69,7 @@ body {
 main {
     padding: 2em;
     margin: 2em auto auto auto;
-    width: 50%;
+    width: var(--main-width);
     border: 0.1em white solid;
     background-color: rgba(0, 0, 0, 0.25);
 }
@@ -45,7 +81,7 @@ h1, h2 {
     margin-bottom: 0.1em;
 }
 
-h1 {font-size: 6em;}
+h1 {font-size: var(--title-size);}
 h2 {font-size: 3em;}
 
 
@@ -97,6 +133,8 @@ p.description {
 
 /* === === === === === === Navbar === === === === === === */
 .navbar ul {
+    display: flex;
+    justify-content: center;
     text-align: center;
     list-style-type: none;
     margin: 1em 0 1em;
@@ -104,7 +142,7 @@ p.description {
 }
 
 .navbutton {
-    display: inline;
+    display: flex;
     border: 0.1em white solid;
     background-color: rgba(0, 0, 0, 0.25);
     padding: 0.5em 0 0.5em 0;

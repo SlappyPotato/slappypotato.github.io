@@ -1,0 +1,192 @@
+/* === === === === === === Scaling === === === === === === */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{font-size: 10%;}
+
+    :root {
+        --main-width: 85%;
+        --title-size: 25em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{font-size: 25%;}
+
+    :root {
+        --main-width: 80%;
+        --title-size: 20em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{font-size: 50%;}
+
+    :root {
+        --main-width: 75%;
+        --title-size: 10em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{font-size: 75%;}
+
+    :root {
+        --main-width: 60%;
+        --title-size: 8em;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{font-size: 100%;}
+
+    :root {
+        --main-width: 50%;
+        --title-size: 6em;
+    }
+}
+
+/* === === === === === === Commando Font === === === === === === */
+@font-face {
+    font-family: 'commando';
+    src: url('fonts/commando.woff2') format('woff2'),
+         url('fonts/commando.woff') format('woff'),
+         url('fonts/commando.ttf') format('truetype');
+}
+
+/* === === === === === === Generic === === === === === === */
+
+body {
+    background-image: url(images/bg.png);
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+main {
+    padding: 2em;
+    margin: 2em auto auto auto;
+    width: var(--main-width);
+    border: 0.1em white solid;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+h1, h2 {
+    font-family: 'commando', sans-serif;
+    letter-spacing: 0.02em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+h1 {font-size: var(--title-size);}
+h2 {font-size: 3em;}
+
+
+h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+h3 {font-size: 2.5em;}
+h4 {font-size: 2em;}
+h5 {font-size: 1.5em;}
+h6 {font-size: 1em;}
+
+a {
+    color: rgb(254, 63, 99);
+}
+
+.spacer {
+    margin: 5em;
+}
+
+.smallspacer {
+    margin: 2.5em;
+}
+
+p.description {
+    max-width: 75%;
+    margin: auto;
+    font-size: 1.25em;
+    line-height: 167.5%;
+}
+
+.ytembed {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.ytembed iframe, .ytembed object, .ytembed embed {
+	position:absolute;
+	left:12.5%;
+	width:75%;
+	height:75%;
+}
+
+/* === === === === === === Navbar === === === === === === */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    margin: 1em 0 1em;
+    padding: 0.5em 0 0.5em;
+}
+
+.navbutton {
+    display: flex;
+    border: 0.1em white solid;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 0.5em 0 0.5em 0;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+.navbutton a {
+    color: white;
+    text-decoration: none;
+    padding: 0 2em 0 2em;
+}
+
+/* === === === === === === Play Game Table === === === === === === */
+#playgame {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#playgame tr th, td{
+    padding: 1em;
+}
+
+.badge {
+    padding-top: 0.5em;
+    max-width: 12.5em;
+    height: auto;
+}
+
+#topcell {
+    border-bottom: 0.1em white solid;
+}
+
+#leftcell {
+    border-right: 0.1em white solid;
+}
+
+/* === === === === === === External Links === === === === === === */
+.links {
+    font-size: 1.5em;
+    list-style-type: none;
+    margin: 1em 0 1em 2.5em;
+    padding: 0.5em 0 0.5em 1em;
+    border-left: 0.1em white solid;
+}

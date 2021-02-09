@@ -182,6 +182,12 @@ p.description {
     border-right: 0.1em white solid;
 }
 
+#gp-disclaimer {
+    text-align: center;
+    font-size: 1em;
+    color: #aaa;
+}
+
 /* === === === === === === External Links === === === === === === */
 .links {
     font-size: 1.5em;

@@ -15,49 +15,53 @@
 </head>
 <body>
     <!-- Page Title -->
-    <header>
-        <h1>CubeRunner</h1>
-    </header>
-
-    <!-- Navbar -->
-    <section>
+    <header class="navbar-section">
+        <h1><a href="#">CubeRunner</a></h1>
         <nav>
             <ul class="navbar-links">
-                <li><a href="#">Home</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">EULA</a></li>
                 <li><a href="#">Other</a></li>
+                <li><a href="#"><button>Play Game</button></a></li>
             </ul>
         </nav>
-    </section>
+    </header>
 
-    <!-- Announcement/Splash -->
     <section>
-        <h2>Release v1.0 Out Now!</h2>
-    </section>
-
-    <!-- Trailer -->
-    <section>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aUKHalSldb8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container">
+            <!-- Announcement/Splash -->
+            <h2>Release v1.0 Out Now!</h2>
+            <!-- Trailer -->
+            <div class="ytembed">
+                <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/aUKHalSldb8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     </section>
 
     <!-- Description -->
     <section>
-        <h4>Synthwave 3D Endless Runner</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repellat, porro illo numquam possimus, facere adipisci in doloribus reprehenderit libero sed quaerat deleniti eligendi consequatur, perferendis inventore labore eius minus.</p>
+        <div class="container">
+            <h4>Synthwave 3D Endless Runner</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repellat, porro illo numquam possimus, facere adipisci in doloribus reprehenderit libero sed quaerat deleniti eligendi consequatur, perferendis inventore labore eius minus.</p>
+        </div>
     </section>
 
     <!-- Play Game -->
     <section>
-        <h3>Play Now</h3>
-        <div class="split">
-            <div>
-                <img src="images/google-play-badge.png" alt="Google Play Store">
+        <div class="container">
+            <h3>Play Game</h3>
+            <div class="split">
+                <div style="margin: auto;">
+                    <a href=""><img src="images/itch-badge.svg" alt="itch.io Page" class="playbutton"></a>
+                    <p>Desktop</p>
+                </div>
+                <div style="margin: auto;">
+                    <a href=""><img src="images/google-play-badge.png" alt="Google Play Store" class="playbutton"></a>
+                    <p>Android</p>
+                </div>
             </div>
-
-            <div>
-                <img src="images/itch-badge.svg" alt="itch.io Page">
-            </div>
+            
+            <p class="gpdisclaimer">Google Play and the Google Play logo are trademarks of Google LLC.</p>
         </div>
     </section>
 

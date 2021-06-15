@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <link rel="icon" href="favicon.ico">
-    <title>CubeRunner Homepage</title>
+    <title>CubeRunner</title>
 </head>
 <body>
-    <!-- Page Title -->
+    <!-- Nav Bar -->
     <header>
         <nav class="navbar">
-            <h1><a href="#">CubeRunner</a></h1>
+            <h1 class="center-align"><a href="#">CubeRunner</a></h1>
             
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
@@ -27,51 +27,52 @@
             </a>
 
             <ul class="navbar-links">
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">EULA</a></li>
-                <li><a href="#">Other</a></li>
-                <li><a href="#"><button>Play Game</button></a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="eula.html">EULA</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#playgame"><button>Play Game</button></a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <div class="container">
-            <!-- Announcement/Splash -->
-            <h2>Release v1.0 Out Now!</h2>
-            <!-- Trailer -->
-            <div class="ytembed">
-                <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/aUKHalSldb8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+    <section class="container">
+        <!-- Announcement/Splash -->
+        <h2 class="center-align">Release v1.0 Out Now!</h2>
+        <!-- Trailer -->
+        <div class="ytembed">
+            <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/aUKHalSldb8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 
     <!-- Description -->
-    <section>
-        <div class="container">
-            <h4>Synthwave 3D Endless Runner</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repellat, porro illo numquam possimus, facere adipisci in doloribus reprehenderit libero sed quaerat deleniti eligendi consequatur, perferendis inventore labore eius minus.</p>
-        </div>
+    <section class="container">
+        <h4 class="center-align">Synthwave 3D Endless Runner</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quas sint officiis temporibus. Eveniet eaque, debitis beatae doloremque obcaecati vitae harum possimus nisi delectus, ipsa enim sunt adipisci explicabo voluptates. Dolorum sit, placeat pariatur consectetur aliquid ipsum molestiae ducimus beatae iure mollitia perferendis eius deleniti cumque aliquam at praesentium fugiat dolore esse iste quod eum delectus! Voluptates accusamus molestias repellendus id iste, numquam quisquam sunt voluptate officia cumque facere optio repudiandae laboriosam. Fuga sed consequatur dolorum aspernatur ducimus numquam officia molestias sapiente laborum voluptate mollitia nostrum, et veniam. Temporibus, aliquid. Numquam tempora voluptate suscipit perspiciatis illum labore obcaecati quasi optio fuga quam error, nulla nisi commodi minus dolores deserunt? Vitae maxime quod aspernatur dolores ullam, aliquid corrupti error consequatur suscipit commodi, possimus unde corporis! Ipsa rerum delectus perspiciatis sint, nihil autem et nobis dolorem necessitatibus corrupti architecto ducimus libero facere, aut odio facilis unde voluptatum quod error at? Aliquid a magnam hic libero veritatis distinctio ad doloremque cum ducimus placeat voluptate officia beatae nisi assumenda, quo, velit qui. Expedita tempore nulla necessitatibus repellendus autem natus, id qui est nisi eligendi aperiam, placeat fuga atque eius magni minus. Blanditiis, similique. Ipsum nihil reprehenderit in consequuntur quaerat eaque velit illo alias totam.</p>
     </section>
 
     <!-- Play Game -->
-    <section>
-        <div class="container">
-            <h3>Play Game</h3>
+    <section id="playgame" class="container">
+            <h3 class="center-align">Play Game</h3>
             <div class="split">
                 <div style="margin: auto;">
-                    <a href=""><img src="images/itch-badge.svg" alt="itch.io Page" class="playbutton"></a>
-                    <p>Desktop</p>
+                    <a href="https://poorgrammer.itch.io/cuberunner" class="playbuttonlink"><img src="images/itch-badge.svg" alt="itch.io Page" class="playbutton"></a>
+                    <p class="playbutton-desc">Desktop</p>
                 </div>
                 <div style="margin: auto;">
-                    <a href=""><img src="images/google-play-badge.png" alt="Google Play Store" class="playbutton"></a>
-                    <p>Android</p>
+                    <a href="https://play.google.com/store/apps/details?id=me.Poorgrammer.CubeRunner" class="playbuttonlink"><img src="images/google-play-badge.png" alt="Google Play Store" class="playbutton"></a>
+                    <p class="playbutton-desc">Android</p>
                 </div>
             </div>
-            
+
             <p class="gpdisclaimer">Google Play and the Google Play logo are trademarks of Google LLC.</p>
-        </div>
     </section>
+
+    <!-- Footer -->
+<!-- TODO: Main site not built yet
+    <footer>
+        <a href="../index.html">Return to Main Site</a>
+    </footer>
+-->
 
 
 </body>

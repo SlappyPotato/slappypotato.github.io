@@ -9,6 +9,9 @@
     /* Font Families */
     --ff-primary: 'Space Grotesk', sans-serif;
     --ff-heading: 'commando', sans-serif;
+
+    /* Transitions */
+    --tr-primary: all 0.3s ease 0s;
 }
 
 *,
@@ -51,8 +54,8 @@ section {
 }
 
 h1, h2, h3, h4 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
 }
 
 h1 {
@@ -74,7 +77,7 @@ button {
     font-family: var(--ff-primary);
     font-size: 1.25rem;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: var(--tr-primary);
 }
 
 button:hover {
@@ -108,7 +111,7 @@ a {
 }
 
 .navbar h1 a {
-    transition: all 0.3s ease 0s;
+    transition: var(--tr-primary);
     text-decoration: none;
     color: var(--clr-white);
 }
@@ -127,7 +130,7 @@ a {
 }
 
 .navbar-links li a {
-    transition: all 0.3s ease 0s;
+    transition: var(--tr-primary);
     text-decoration: none;
     color: var(--clr-white);
 }
@@ -232,7 +235,7 @@ a {
 }
 
 .playbutton-desc {
-    transition: all 0.3s ease 0s;
+    transition: var(--tr-primary);
 }
 
 .playbuttonlink:hover + .playbutton-desc {
